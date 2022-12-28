@@ -1,5 +1,8 @@
-// import React from "react"
-// import ReactDOM from "react-dom"
+import React from "react"
+import ReactDOM from "react-dom"
+import Header from "./Header"
+import Footer from "./Footer"
+import MainContent from "./MainContent"
 
 // // Save JSX elements in variable
 // const staticPage = (
@@ -21,48 +24,17 @@
 // Create our custom component that returns react element
 // 1. Use pascal case for our component name!
 // 2. Wrap the component with < /> in render()
-function Header() {
-    return (
-        <header>
-            <nav className="nav">
-                <img className="nav-img" src="./mario-logo.png"/>
-                <ul className="nav-items">
-                    <li>Blog</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
-
-function Footer() {
-    return (
-        <footer className="footer">
-            <small>@ 2022 Lao developement. All rights reserved.</small>
-        </footer>
-    )
-}
-
-// MainContent -> parent component
-function MainContent() {
-    return (
-        // Children components
-        <div>
-            <h1>My React learning path</h1>
-            <h3>My first day learning React xD</h3>
-            <ol>
-                <li>What is composability?</li>
-                <li>Why is React declarative?</li>
-                <li>What is JSX?</li>
-                <li>How to set up React?</li>
-            </ol>
-        </div>
-    )
-}
+// Example: 
+// function Footer() {
+//     return (
+//         <footer className="footer">
+//             <small>@ 2022 Lao developement. All rights reserved.</small>
+//         </footer>
+//     )
+// }
 
 // CustomPage -> parent component
-function CustomPage() {
+function App() {
     return (
         <div className="main">
             {/* Create an instance of header/MainContent/Footer component */}
@@ -77,6 +49,6 @@ function CustomPage() {
 
 // Render our page
 ReactDOM.render(
-    <CustomPage />,
+    <App />,
     document.getElementById("root")
 )
