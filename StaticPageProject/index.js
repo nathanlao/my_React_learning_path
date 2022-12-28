@@ -1,6 +1,7 @@
 // import React from "react"
 // import ReactDOM from "react-dom"
 
+// Save JSX elements in variable
 const staticPage = (
     <div>
         <img src="./mario-logo.png" width="100px" />
