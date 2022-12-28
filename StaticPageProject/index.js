@@ -24,8 +24,13 @@
 function Header() {
     return (
         <header>
-            <nav>
-                <img src="./mario-logo.png" width="100px" />
+            <nav className="nav">
+                <img className="nav-img" src="./mario-logo.png"/>
+                <ul className="nav-items">
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
@@ -33,7 +38,7 @@ function Header() {
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <small>@ 2022 Lao developement. All rights reserved.</small>
         </footer>
     )
@@ -59,7 +64,7 @@ function MainContent() {
 // CustomPage -> parent component
 function CustomPage() {
     return (
-        <div>
+        <div className="main">
             {/* Create an instance of header/MainContent/Footer component */}
             {/* Composing our page of other components */}
             {/* Children components */}
