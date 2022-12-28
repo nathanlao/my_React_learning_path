@@ -21,26 +21,52 @@
 // Create our custom component that returns react element
 // 1. Use pascal case for our component name!
 // 2. Wrap the component with < /> in render()
-function CustomPage() {
+function Header() {
     return (
-        <div>
-            <header>
-                <nav>
-                    <img src="./mario-logo.png" width="100px" />
-                </nav>
-            </header>
-        <h1>My React learning path</h1>
-        <h3>My first day learning React xD</h3>
-        <ol>
-            <li>What is composability?</li>
-            <li>Why is React declarative?</li>
-            <li>What is JSX?</li>
-            <li>How to set up React?</li>
-        </ol>
+        <header>
+            <nav>
+                <img src="./mario-logo.png" width="100px" />
+            </nav>
+        </header>
+    )
+}
+
+function Footer() {
+    return (
         <footer>
             <small>@ 2022 Lao developement. All rights reserved.</small>
         </footer>
-    </div>
+    )
+}
+
+// MainContent -> parent component
+function MainContent() {
+    return (
+        // Children components
+        <div>
+            <h1>My React learning path</h1>
+            <h3>My first day learning React xD</h3>
+            <ol>
+                <li>What is composability?</li>
+                <li>Why is React declarative?</li>
+                <li>What is JSX?</li>
+                <li>How to set up React?</li>
+            </ol>
+        </div>
+    )
+}
+
+// CustomPage -> parent component
+function CustomPage() {
+    return (
+        <div>
+            {/* Create an instance of header/MainContent/Footer component */}
+            {/* Composing our page of other components */}
+            {/* Children components */}
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
     )
 }
 
