@@ -1,3 +1,4 @@
+// For jsx to work, need to import React
 // import React from "react"
 // import ReactDOM from "react-dom"
 
