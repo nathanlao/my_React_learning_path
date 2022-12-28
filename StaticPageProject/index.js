@@ -21,24 +21,31 @@
 // Create our custom component that returns react element
 // 1. Use pascal case for our component name!
 // 2. Wrap the component with < /> in render()
-function TempName() {
+function CustomPage() {
     return (
         <div>
-        <img src="./mario-logo.png" width="100px" />
+            <header>
+                <nav>
+                    <img src="./mario-logo.png" width="100px" />
+                </nav>
+            </header>
         <h1>My React learning path</h1>
         <h3>My first day learning React xD</h3>
-        <ul>
+        <ol>
             <li>What is composability?</li>
             <li>Why is React declarative?</li>
             <li>What is JSX?</li>
             <li>How to set up React?</li>
-        </ul>
+        </ol>
+        <footer>
+            <small>@ 2022 Lao developement. All rights reserved.</small>
+        </footer>
     </div>
     )
 }
 
 // Render our page
 ReactDOM.render(
-    <TempName />,
+    <CustomPage />,
     document.getElementById("root")
 )
