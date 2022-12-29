@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    background-color: #23252C;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 320px;
+    background-color: #1a1b21;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.nav-pic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 317px;
+    height: 317px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #1a1b21;
+}
+
+.content {
+    background-color: #1a1b21;
+    text-align: center;
+}
+
+.content--name {
+    margin: 0;
+    padding: 15px 15px 0px 15px;
+    color: #FFFFFF;
+    line-height: 1.5em;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.content--title {
+    margin: 0;
+    padding: 0px 15px 5px 15px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.3em;
+    color: #F3BF99;
+}
+
+.content--website {
+    margin: 0;
+    padding: 0px 15px 10px 15px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #F5F5F5;
+}
+
+.content--emailbtn {
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    width: 130px;
+    margin-inline: 0.5em;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.content--emailbtn > i {
+    padding-right: 7px;
+}
+
+.content--linkinbtn {
+    background: #5093E2;
+    border: 1px solid #5093E2;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    width: 130px;
+    margin-inline: 0.5em;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.content--linkinbtn > i {
+    padding-right: 7px;
+}
+
+.subcontent--title {
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 10%;
+    color: #F5F5F5;
+}
+
+.subcontent--description {
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #dcdcdc;
+    font-size: 0.8rem;
+    line-height: 1.4em;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    background-color: #161619;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.footer > img {
+    width: 50px;
+    padding-left: 24px;
+}
