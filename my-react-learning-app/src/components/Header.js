@@ -1,5 +1,5 @@
 import React from "react"
-import marioLogo from "./image/mario-logo.png"
+import marioLogo from "../images/mario-logo.png"
 
 export default function Header() {
     return (
