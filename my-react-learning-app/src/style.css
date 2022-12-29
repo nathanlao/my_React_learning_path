@@ -19,6 +19,10 @@ body {
     background-color:blanchedalmond;
 }
 
+span {
+    font-weight: 100;
+}
+
 .nav {
     display: flex;
     /* push the space in between 'img' and 'ul' */
@@ -57,8 +61,10 @@ body {
     letter-spacing: -0.03em;
 }
 .content-list {
+    
+    font-weight: 600;
     margin-top: 25px;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .content-list > li {
@@ -81,4 +87,9 @@ body {
     background-color: burlywood;
     text-align: center;
     font-size:x-large;
+}
+
+.content_nested {
+    font-weight: 100;
+    padding-block: 10px;
 }
