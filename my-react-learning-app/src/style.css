@@ -57,6 +57,12 @@ body {
     padding-block: 10px;
 }
 
+/* add pseudo element selector for marker */
+.content-list > li::marker {
+    content: '☞ ';
+    font-size: 1.3em;
+}
+
 .footer {
     position: fixed;
     left: 0;
