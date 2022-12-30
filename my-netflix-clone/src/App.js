@@ -8,7 +8,15 @@ export default function App() {
         <div>
             <Navbar />
             {/* <Hero /> */}
-            <Card />
+            {/* pass props to Card*/}
+            <Card 
+                img="deadpool.png"
+                title="Deadpool"
+                date="February 12"
+                rating={7.5}
+                type="Action"
+                timeLen="1h 48m"
+            />
         </div>
     )
 }
