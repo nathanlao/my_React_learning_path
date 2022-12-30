@@ -8,6 +8,8 @@ export default function App() {
     // map data into card components -> return a new array with card components using props
     const cardElements = cardData.map((card) => {
         return <Card 
+                // key -> get rid of warning caused by map()
+                key={card.id}
                 img={card.img}
                 title={card.title}
                 date={card.date}

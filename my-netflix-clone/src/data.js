@@ -1,5 +1,6 @@
 export default [
-    {
+    {   
+        id:1,
         img: "deadpool.png",
         title: "Deadpool",
         date: "February 12",
@@ -7,7 +8,8 @@ export default [
         type: "Action",
         timeLen: "1h 48m",
     },
-    {
+    {   
+        id:2,
         img: "avatar.png",
         title: "Avatar",
         date: "December 16",
@@ -15,7 +17,8 @@ export default [
         type: "Sci-fi",
         timeLen: "3h 12m",
     },
-    {
+    {   
+        id:3,
         img: "babylon.png",
         title: "Babylon",
         date: "December 23",
@@ -23,7 +26,8 @@ export default [
         type: "Drama",
         timeLen: "3h 9m",
     },
-    {
+    {   
+        id:4,
         img: "knivesout.png",
         title: "Knives Out",
         date: "November 27",
