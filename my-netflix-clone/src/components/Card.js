@@ -1,17 +1,16 @@
 import React from "react";
-import poster from "../images/deadpool.png"
 import star from "../images/star.png"
 
-export default function Card() {
+export default function Card(props) {
     return (
         <div className="card">
-            <img alt="poster" src={poster} className="card--image" />
-            <p><span className="bold">Deadpool</span> February 12</p>
+            <img alt="poster" src={require(`../images/${props.img}`)} className="card--image" />
+            <p><span className="bold">{props.title}</span> {props.date}</p>
             <div className="card--stats">
                 <img alt="star" src={star} className="card--star"/>
-                <span className="gray">7.5</span>
-                <span className="gray">Action • </span>
-                <span className="gray">1h 48m</span>
+                <span className="gray">{props.rating}</span>
+                <span className="gray">{props.type} • </span>
+                <span className="gray">{props.timeLen}</span>
             </div>
         </div>
     )
