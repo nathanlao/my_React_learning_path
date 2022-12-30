@@ -10,13 +10,17 @@ export default function App() {
         return <Card 
                 // key -> get rid of warning caused by map()
                 key={card.id}
-                img={card.img}
-                title={card.title}
-                date={card.date}
-                rating={card.rating}
-                type={card.type}
-                timeLen={card.timeLen}
-                hitRate={card.hitRate}
+                // img={card.img}
+                // title={card.title}
+                // date={card.date}
+                // rating={card.rating}
+                // type={card.type}
+                // timeLen={card.timeLen}
+                // hitRate={card.hitRate}
+
+
+                // Give the component the entire object
+                card={card}
                 />
     })
 
