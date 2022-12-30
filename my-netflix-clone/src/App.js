@@ -16,6 +16,7 @@ export default function App() {
                 rating={card.rating}
                 type={card.type}
                 timeLen={card.timeLen}
+                hitRate={card.hitRate}
                 />
     })
 
