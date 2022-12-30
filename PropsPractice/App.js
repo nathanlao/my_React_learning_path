@@ -15,7 +15,7 @@ export default function App() {
     /**
      * Idea: 
      * 1. jokesData contains an array of joke objects
-     * 2. map() -> give me a new array
+     * 2. map() -> give me a new array( contains of JSX elements)
      * 3. array function -> for each joke object inside jokesData, return 
      *    a joke components, with props 
      */
