@@ -30,8 +30,9 @@ export default function App() {
                 type="Action"
                 timeLen="1h 48m"
             /> */}
-
-            {cardElements}
+            <section className="cards--list">
+                {cardElements}
+            </section>
         </div>
     )
 }
