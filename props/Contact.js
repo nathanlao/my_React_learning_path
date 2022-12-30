@@ -1,18 +1,33 @@
 import React from "react";
 
-export default function Contact(properties) {
+//export default function Contact(properties) {
+
+// destructuring object like this -->
+export default function Contact({img, name, phone, email}) {
     return (
         <div className="contact-card">
-                <img src={properties.img}/>
-                <h3>{properties.name}</h3>
+                <img src={img}/>
+                <h3>{name}</h3>
                 <div className="info-group">
                     <img src="./images/phone-icon.png" />
-                    <p>{properties.phone}</p>
+                    <p>{phone}</p>
                 </div>
                 <div className="info-group">
                     <img src="./images/mail-icon.png" />
-                    <p>{properties.email}</p>
+                    <p>{email}</p>
                 </div>
             </div>
     )
 }
+
+// destructuring props
+const person = {
+    img: "./images/mr-whiskerson.png",
+    name: "Mr. Whiskerson",
+    phone: "(800) 555-1234",
+    email: "mr.whiskaz@catnap.meow"
+}
+
+const {img, name} = person
+console.log(name)
+console.log(img)
