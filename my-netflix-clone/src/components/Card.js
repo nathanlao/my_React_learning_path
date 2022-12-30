@@ -2,7 +2,7 @@ import React from "react";
 import star from "../images/star.png"
 
 export default function Card(props) {
-    console.log(props)
+    // console.log(props)
     let badgeText
     if (props.card.hitRate > 30) {
         badgeText = "TOP 10"

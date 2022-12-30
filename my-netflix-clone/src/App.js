@@ -21,13 +21,16 @@ export default function App() {
 
                 // Give the component the entire object
                 card={card}
+
+                // Spread object as props
+                // {...card}
                 />
     })
 
     return (
         <div>
             <Navbar />
-            {/* <Hero /> */}
+            <Hero />
             {/* pass props to Card*/}
             {/* <Card 
                 img="deadpool.png"
