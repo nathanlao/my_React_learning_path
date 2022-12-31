@@ -13,7 +13,7 @@ export default function Card(props) {
                     <span>
                         <img className="card--info--logo" alt="character" src={character} />
                     </span>
-                    {props.location} {" "}
+                    {props.brand} {" "}
                     <a href={props.link} className="card--info--link">  
                     View on Flight Club</a>
                 </p>
