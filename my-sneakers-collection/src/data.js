@@ -23,4 +23,28 @@ export default [
         date: "October 22",
         desc: "The OFF-WHITE x Dunk Low 'University Gold' released as part of a collection from Nike and Virgil Abloh. The shoe's leather upper appears in a mix of University Gold and Midnight Navy, with the signature flag label on the lateral side of the heel. A second lacing system overlays the first, while exposed foam emerges on the tongue. A rubber cupsole supports the shoe."
     },
+    {
+        img: "airjordon-four.png",
+        brand: "Air Jordan",
+        link: "https://www.flightclub.com/off-white-x-wmns-air-jordan-4-sp-sail-cv9388-100",
+        title: "OFF-WHITE X WMNS AIR JORDAN 4 SP 'SAIL'",
+        date: "Feburary 21",
+        desc: "The OFF-WHITE x Wmns Air Jordan 4 SP 'Sail' released as part of a collaboration between Virgil Abloh's luxury brand and Jordan Brand. The classic basketball silhouette emerges with a deconstructed leather build, finished in off-white and complemented by semi-translucent TPU on the eyelets, wings and heel panel. A tonal zip-tie and 'Air' above the visible cushioning complete the look."
+    },
+    {
+        img: "airjordon-five.png",
+        brand: "Air Jordan",
+        link: "https://www.flightclub.com/air-jordan-5-retro-sp-black-fire-red-muslin-151682",
+        title: "OFF-WHITE X AIR JORDAN 5 RETRO SP 'MUSLIN'",
+        date: "October 15",
+        desc: "A collaboration between Virgil Abloh and Jordan Brand, the OFF-WHITE x Air Jordan 5 SP 'Muslin' is a stylized take on the silhouette. Built with faded black textile, the upper includes reflective silver detailing on the tongue. The laces and medial side sport Abloh's signature text, while underfoot, the outsole sports a pre-yellowed aesthetic."
+    },
+    {
+        img: "airjordon-one-2.png",
+        brand: "Air Jordan",
+        link: "https://www.flightclub.com/off-white-x-air-jordan-1-retro-high-og-2018-white-white-803295",
+        title: "OFF-WHITE X AIR JORDAN 1 RETRO HIGH OG 'WHITE' 2018",
+        date: "May 16",
+        desc: "The OFF-WHITEx Air Jordan 1 Retro High OG 'White', inspired by Air Jordan 1 colorways, is a reimagination of its 'Chicago' predecessor. Designed by Virgil Abloh, the model features a premium all-white leather and mesh upper with deconstructed Swoosh branding and blue detail, as well as Wings logos on the ankles. It is accentuated on the midsole with black 'AIR' markings, on the side panels with black ' Off-WhiteTM for NIKE ' text and orange tabs."
+    },
 ]
