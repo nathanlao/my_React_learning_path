@@ -1,3 +1,29 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    /* padding: 0; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+    background-color: #e1d4c0;
+    color: #ffffff;
+    height: 80px;
+    padding-block: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav--logo {
+    width: 80px;
+    object-fit: cover;
+    margin-right: 7px;
+}
+
+.nav--title {
+    font-weight:400;
+}
