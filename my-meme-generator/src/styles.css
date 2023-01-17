@@ -29,6 +29,37 @@ body {
 .header--project {
     font-weight: 500;
     font-size: 1rem;
-    margin-right: 37px;
     margin-left: auto;
+}
+
+.section--form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.section--form--input  {
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+    margin-bottom: 15px;
+}
+
+.section--input,
+.section--form--button {
+    font-family: inherit;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.section--input {
+    border: 1px solid #D5D4D8;
+    padding: 10px 10px 11px;
+}
+.section--form--button {
+    border: none;
+    padding: 10px 156px 11px;
+    background-image: linear-gradient(to right, #22223b, #4a4e69);
+    color: #f2e9e4;
+    cursor: pointer;
 }
