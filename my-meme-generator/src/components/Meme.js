@@ -1,15 +1,31 @@
 import React from "react";
+import memeData from "../memeData.js"
 
 export default function Meme() {
+
+    function getMemeImage() {
+        // access to array in data
+        const memeArray = memeData.data.memes
+        // get a random number 
+        const randomNumber = Math.floor(Math.random() * memeArray.length)
+
+        // the url of random object from array
+        const url = memeArray[randomNumber].url
+        // same way -> destructing url from object
+        // const {url} = memeArray[randomNumber]
+
+        console.log(url)
+    }
+
     return (
         <section>
-            <form className="section--form">
+            <div className="section--form">
                 <div className="section--form--input">
                     <input className="section--input" placeholder="Top Text" type="text"/>
                     <input className="section--input" placeholder="Bottom Text" type="text"/>
                 </div>
-                <button className="section--form--button">Get a new meme image 😛</button>
-            </form>
+                <button onClick={getMemeImage} className="section--form--button">Get a new meme image 😛</button>
+            </div>
         </section>
     )
 }
