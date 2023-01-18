@@ -10,7 +10,7 @@ Here we go...
 ### Profile Card
 
 <p align="center">
-<img width="400" alt="Screen Shot 2022-12-29 at 12 17 43 AM" src="https://user-images.githubusercontent.com/75557717/209923513-ab170c0a-9dc8-47ad-83ec-bc21ff0b9469.png">]
+<img width="400" alt="Screen Shot 2022-12-29 at 12 17 43 AM" src="https://user-images.githubusercontent.com/75557717/209923513-ab170c0a-9dc8-47ad-83ec-bc21ff0b9469.png">
 </p>
 
 

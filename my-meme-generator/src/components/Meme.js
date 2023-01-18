@@ -3,6 +3,8 @@ import memeData from "../memeData.js"
 
 export default function Meme() {
 
+    const [memeImage, setMemeImage] = React.useState("")
+
     function getMemeImage() {
         // access to array in data
         const memeArray = memeData.data.memes
@@ -13,8 +15,9 @@ export default function Meme() {
         const url = memeArray[randomNumber].url
         // same way -> destructing url from object
         // const {url} = memeArray[randomNumber]
+        // console.log(url)
 
-        console.log(url)
+        setMemeImage(url)
     }
 
     return (
@@ -25,6 +28,9 @@ export default function Meme() {
                     <input className="section--input" placeholder="Bottom Text" type="text"/>
                 </div>
                 <button onClick={getMemeImage} className="section--form--button">Get a new meme image 😛</button>
+            </div>
+            <div className="section--image--wrapper">
+                <img className="section--image" alt="memeImage" src={memeImage}/>
             </div>
         </section>
     )
