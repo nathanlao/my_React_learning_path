@@ -64,3 +64,8 @@ unchangable. Props are immutable. State is mutable.
 
 ### When to pass the 2 option to the state setter function?
 - Whenever you **DO** need the previous value of state to determine the new value of state.
+ 
+## Data flows in React
+- Passing data to components: there are no ways to pass state among siblings components (It has **no reference/knowledge** about a sibling component), what we need to do is to have the state declared in the parent component and using `props` to pass the state to child component. 
+
+- Aside: React offer a solution: `context` and also third party state management system `redux`
