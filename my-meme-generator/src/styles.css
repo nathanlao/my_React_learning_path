@@ -32,10 +32,13 @@ body {
     margin-left: auto;
 }
 
+section {
+    padding: 36px;
+}
+
 .section--form {
     max-width: 600px;
-    margin: 0 auto;
-    padding: 30px 0;
+    margin: 0 auto 30px;
 }
 
 .section--form--input  {
@@ -62,4 +65,13 @@ body {
     background-image: linear-gradient(to right, #22223b, #4a4e69);
     color: #f2e9e4;
     cursor: pointer;
+}
+
+.section--image--wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.section--image {
+    max-width: 90%;
 }
