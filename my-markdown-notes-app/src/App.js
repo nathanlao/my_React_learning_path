@@ -6,7 +6,17 @@ import Split from "react-split"
 import {nanoid} from "nanoid"
 
 export default function App() {
-    const [notes, setNotes] = React.useState([])
+    // localStorage.clear()
+
+    const myNotes = JSON.parse(localStorage.getItem("myNotes"))
+
+    const [notes, setNotes] = React.useState(myNotes || [])
+
+    // use side effect for localStorage (saving notes in LS)
+    React.useEffect(() => {
+        localStorage.setItem("myNotes", JSON.stringify(notes))
+    }, [notes])
+
     const [currentNoteId, setCurrentNoteId] = React.useState(
         (notes[0] && notes[0].id) || ""
     )
