@@ -10,7 +10,11 @@ export default function App() {
 
     const myNotes = JSON.parse(localStorage.getItem("myNotes"))
 
-    const [notes, setNotes] = React.useState(myNotes || [])
+    const [notes, setNotes] = React.useState(
+        // Using lazy state initialization for notes state 
+        // so it doesn't reach into LS on every single re-render of APP 
+        () => myNotes || []
+    )
 
     // use side effect for localStorage (saving notes in LS)
     React.useEffect(() => {
