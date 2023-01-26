@@ -1,10 +1,10 @@
 import React from "react"
 
 // MainContent -> parent component
-export default function MainContent() {
+export default function MainContent(props) {
     return (
         // Children components
-        <main>
+        <main className={props.darkMode ? "dark" : ""}>
             <h1 className="content-title">My first day learning React xD</h1>
             <ul className="content-list">
                 <li>What is composability?</li>

@@ -5,12 +5,12 @@
 
 main {
     padding: 57px 27px;
+    height: 100vh;
     background-image: url(./images/mario-background.png);
     background-size: 130px;
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: 85%;
-
+    background-position-y: 60%;
 }
 
 body {
@@ -23,7 +23,7 @@ span {
     font-weight: 100;
 }
 
-.nav {
+nav {
     display: flex;
     /* push the space in between 'img' and 'ul' */
     /* justify-content: space-between; */
@@ -49,10 +49,81 @@ span {
     /* Give items in a row  */
     display: flex;
     font-weight: 600;
+    margin-right: 40px;
 }
 
 .nav-items > li {
     padding: 10px;
+}
+
+nav.dark {
+    color:#F5F5F5;
+    background-color: #21222A;
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #806cbb;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
+main.dark {
+    background-color: #282D35;
+    color: white;    
 }
 
 .content-title {
@@ -61,7 +132,6 @@ span {
     letter-spacing: -0.03em;
 }
 .content-list {
-    
     font-weight: 600;
     margin-top: 25px;
     max-width: 500px;
@@ -79,7 +149,12 @@ span {
     font-size: 1.3em;
 }
 
-.footer {
+.content_nested {
+    font-weight: 100;
+    padding-block: 10px;
+}
+
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -89,7 +164,7 @@ span {
     font-size:x-large;
 }
 
-.content_nested {
-    font-weight: 100;
-    padding-block: 10px;
+footer.dark {
+    background-color: #21222A;
+    color: white;
 }
