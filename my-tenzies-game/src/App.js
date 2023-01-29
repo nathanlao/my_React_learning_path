@@ -3,6 +3,9 @@ import Die from "./components/Die"
 
 export default function App() {
 
+    // State to hold the array of numbers
+    const [dice, setDice] = useState(allNewDice())
+
     function allNewDice() {
         const newDiceArray = []
         for (let i = 0; i < 10; i++) {
@@ -13,12 +16,13 @@ export default function App() {
         return newDiceArray
     }
 
-    // State to hold the array of numbers
-    const [numbers, setNumbers] = useState(allNewDice())
+    function handleRoll() {
+        setDice(allNewDice())
+    }
 
     // Map over the numbers array -> array of die element with value props
-    const diceElements = numbers.map((number, index) => {
-        return <Die key={index} value={number} />
+    const diceElements = dice.map((die, index) => {
+        return <Die key={index} value={die} />
     })
 
     return (
@@ -26,6 +30,7 @@ export default function App() {
             <div className="dice-container">
                {diceElements}
             </div>
+            <button className="roll-btn" onClick={handleRoll}>Roll</button>
         </main>
     )
 }

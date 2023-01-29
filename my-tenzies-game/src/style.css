@@ -5,6 +5,7 @@
 body {
     margin: 0;
     background-color: #0B2434;
+    font-family: "Karla", sans-serif;
     padding: 30px;
 }
 
@@ -18,7 +19,7 @@ main {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -43,4 +44,30 @@ main {
 
 .die-number {
     font-size: 2rem;
+}
+
+.roll-btn {
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 35px;
+    background-color: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.roll-btn:hover {
+    background-color: #ffc300;
+    color: #0B2434;
+}
+
+.roll-btn:focus {
+    outline: none;
+}
+
+.roll-btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
