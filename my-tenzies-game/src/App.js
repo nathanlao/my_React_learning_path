@@ -29,13 +29,13 @@ export default function App() {
 
     // Map over the numbers array -> array of die element with value props
     const diceElements = dice.map((die) => {
-        return <Die key={die.id} value={die.value} />
+        return <Die key={die.id} value={die.value} isHeld={die.isHeld}/>
     })
 
     return (
         <main>
             <div className="dice-container">
-               {diceElements}
+                {diceElements}
             </div>
             <button className="roll-btn" onClick={handleRoll}>Roll</button>
         </main>
