@@ -45,9 +45,14 @@ export default function App() {
     }
 
     function handleRoll() {
-        setDice(prevDice => prevDice.map((die) => {
-            return die.isHeld ? die : generateNewDie()
-        }))
+        if (!tenzies) {
+            setDice(prevDice => prevDice.map((die) => {
+                return die.isHeld ? die : generateNewDie()
+            }))
+        } else {
+            setTenzies(false)
+            setDice(allNewDice())
+        }
     }
 
     function holdDice(id) {
