@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Button from "./Button";
+import { FaApplePay } from "react-icons/fa";
 
 
 function App() {
@@ -11,7 +12,10 @@ function App() {
         {/* <Button text="Click here"/> */}
 
         {/** Make the button accept and display children */}
-        <Button>Buy now!</Button>
+        <Button>
+            <FaApplePay />
+            Buy now!
+        </Button>
         </main>
     )
 }
