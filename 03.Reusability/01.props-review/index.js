@@ -7,7 +7,11 @@ function App() {
     return (
         <main>
         {/* Custom Button component here */}
-            <Button text="Click here"/>
+        {/* Button is the children of main */}
+        {/* <Button text="Click here"/> */}
+
+        {/** Make the button accept and display children */}
+        <Button>Buy now!</Button>
         </main>
     )
 }
