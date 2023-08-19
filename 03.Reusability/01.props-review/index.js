@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Button from "./Button";
-import { FcGoogle } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         {/* <Button text="Click here"/> */}
 
         {/** Make the button accept and display children */}
-        <Button onClick={clickHandler}>
+        <Button style={{backgroundColor: "green"}} onClick={clickHandler}>
             <FcGoogle />
             Log in with Google
         </Button>
