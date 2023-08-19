@@ -6,6 +6,6 @@ export default function Button(props) {
         // Implicit props (children)
         // React added this to the props object
         // to access to the children (anything in between the custom components tags)
-        <button>{props.children}</button>
+        <button onClick={props.onClick}>{props.children}</button>
     )
 }
