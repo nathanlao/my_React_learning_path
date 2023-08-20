@@ -1,7 +1,19 @@
 import React from "react";
 
+/**
+ * Treat the use of Button here: we are the creater of this custom component
+ * Treat the use of Button in index.js: users of this Button component 
+ */
 
-export default function Button(props) {
+export default function Button({children, ...restProps}) {
+    // console.log(restProps);
+
+    /** 
+    * 3. Destructing props using {}
+    * ...restProps is used to spread the rest props that passed in this
+    * Button component -> which is 'style' and 'onClick' from index.js
+    * 
+    */
     return (
         // 1. Implicit props (children)
         // React added this to the props object
@@ -28,8 +40,8 @@ export default function Button(props) {
             But make sure use valid prop that native button accpeting 
             in <Button /> in index.js
          */
-        <button {...props}>
-            {props.children}
+        <button {...restProps}>
+            {children}
         </button>
     )
 }
