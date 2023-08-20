@@ -17,7 +17,11 @@ function App() {
         {/* <Button text="Click here"/> */}
 
         {/** Make the button accept and display children */}
-        <Button style={{backgroundColor: "green"}} onClick={clickHandler} >
+        <Button 
+            size="lg"
+            className="green"
+            style={{backgroundColor: "yellow"}} 
+            onClick={clickHandler} >
             <FcGoogle />
             Log in with Google
         </Button>

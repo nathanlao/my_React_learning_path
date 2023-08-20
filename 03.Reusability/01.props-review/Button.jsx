@@ -1,11 +1,14 @@
 import React from "react";
 
+// pkg to avoid className conflict, join multiple className together
+import classnames from "classnames"; 
+
 /**
  * Treat the use of Button here: we are the creater of this custom component
  * Treat the use of Button in index.js: users of this Button component 
  */
 
-export default function Button({children, ...restProps}) {
+export default function Button({children, className, size, ...restProps}) {
     // console.log(restProps);
 
     /** 
@@ -14,6 +17,14 @@ export default function Button({children, ...restProps}) {
     * Button component -> which is 'style' and 'onClick' from index.js
     * 
     */
+
+    let sizeClass = size ? `button-${size}` : `button-${size}`;
+
+    // 4. To avoid conflict in between "className from ...restProps"
+    // and the className in native button, otherwise they overwritten the other
+    const allClasses = classnames(sizeClass, className);
+    // console.log(allClasses);
+
     return (
         // 1. Implicit props (children)
         // React added this to the props object
@@ -40,7 +51,8 @@ export default function Button({children, ...restProps}) {
             But make sure use valid prop that native button accpeting 
             in <Button /> in index.js
          */
-        <button {...restProps}>
+
+        <button className={allClasses} {...restProps}>
             {children}
         </button>
     )
