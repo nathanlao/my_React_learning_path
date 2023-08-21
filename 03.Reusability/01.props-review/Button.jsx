@@ -8,7 +8,7 @@ import classnames from "classnames";
  * Treat the use of Button in index.js: users of this Button component 
  */
 
-export default function Button({children, className, size, ...restProps}) {
+export default function Button({children, className, size, variant, ...restProps}) {
     // console.log(restProps);
 
     /** 
@@ -18,11 +18,13 @@ export default function Button({children, className, size, ...restProps}) {
     * 
     */
 
-    let sizeClass = size ? `button-${size}` : `button-${size}`;
+    let sizeClass = size ? `button-${size}` : "";
+
+    let variantClass = variant ? `button-${variant}` : "";
 
     // 4. To avoid conflict in between "className from ...restProps"
     // and the className in native button, otherwise they overwritten the other
-    const allClasses = classnames(sizeClass, className);
+    const allClasses = classnames(sizeClass, className, variantClass);
     // console.log(allClasses);
 
     return (

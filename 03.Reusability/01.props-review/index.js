@@ -20,11 +20,15 @@ function App() {
         <Button 
             size="lg"
             className="green"
+            variant="danger"
             style={{backgroundColor: "yellow"}} 
             onClick={clickHandler} >
             <FcGoogle />
             Log in with Google
         </Button>
+        <Button size="lg" variant="success">Success</Button>
+        <Button size="sm" variant="warning">Warning</Button>
+        <Button size="sm" variant="danger">Danger</Button>
         </main>
     )
 }

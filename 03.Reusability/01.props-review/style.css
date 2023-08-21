@@ -44,7 +44,25 @@ button.button-sm {
 }
 
 button.button-lg {
-    padding: 30px 40px;
+    padding: 13px 25px;
+}
+
+button.button-success {
+    color: #047857;
+    background-color: #ECFDF5;
+    border-color: #047857;
+}
+
+button.button-warning {
+    color: #FBBF24;
+    background-color: #FFFBEB;
+    border-color: #FBBF24;
+}
+
+button.button-danger {
+    color: #F87171;
+    background-color: #FEF2F2;
+    border-color: #F87171;
 }
 
 .green {
