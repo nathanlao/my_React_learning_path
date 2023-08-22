@@ -29,6 +29,12 @@ function App() {
         <Menu>
             <MenuButton>Sports</MenuButton>
             <MenuDropdown>
+                {/* children here:
+                    <MenuItem></MenuItem>
+                    <MenuItem></MenuItem>
+                    <MenuItem></MenuItem>
+                    ...
+                */}
                 {sports.map((sport) => (
                     <MenuItem key={sport}>{sport}</MenuItem>
                 ))}
