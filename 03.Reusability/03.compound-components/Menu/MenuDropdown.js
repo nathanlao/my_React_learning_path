@@ -7,6 +7,19 @@ export default function MenuDropdown({ children, open }) {
         (
             <div className="menu-dropdown">
                 {children}
+                
+            {/* Remember <MenuItem/> is not a direct child of <Menu />:
+            if you want <MenuItem/> access to state/function, you need 
+            React.Children in <MenuDropdown/>, which is one of the limitation
+            of React.Children API
+            */}
+
+                {/* {React.Children.map(children, (child) => {
+                    return React.cloneElement(child, {
+                        open,
+                        toggle,
+                    })
+                })} */}
             </div>
         )
     )
