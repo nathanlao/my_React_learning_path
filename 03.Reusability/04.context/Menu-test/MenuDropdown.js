@@ -3,9 +3,9 @@ import { MenuContext } from "./Menu"
 
 export default function MenuDropdown({ children }) {
 
-    const isOpen = React.useContext(MenuContext);
+    const { open } = React.useContext(MenuContext);
 
-    return isOpen ? (
+    return open ? (
         <div className="menu-dropdown">
             {children}
         </div>
