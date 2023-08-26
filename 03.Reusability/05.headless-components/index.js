@@ -10,6 +10,14 @@ function App() {
                 provide internal state (logic in <Toggle /> to handle 
                 on and off) to children
             */}
+
+            {/* Toggle compound components
+                a. Button (flip state)
+                b. On (what to display when Toggle state is on)
+                c. Off (what to display when Toggle state is off)
+                d. Display (expose internal state to give more control to user)
+            */}
+            
             <Toggle>
                 <Star />
             </Toggle>
