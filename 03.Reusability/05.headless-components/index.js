@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Star from "./Star"
-import Toggle from "./Toggle"
+import Toggle from "./Toggle/Toggle"
 
 function App() {
     return (
@@ -17,7 +17,7 @@ function App() {
                 c. Off (what to display when Toggle state is off)
                 d. Display (expose internal state to give more control to user)
             */}
-            
+
             <Toggle>
                 <Star />
             </Toggle>

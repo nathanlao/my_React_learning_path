@@ -1,5 +1,7 @@
 import React from "react";
 
+const ToggleContext = React.createContext();
+
 export default function Toggle({ children }) {
 
     const [on, setOn] = React.useState(false);
@@ -9,8 +11,10 @@ export default function Toggle({ children }) {
     }
 
     return (
-        <>
+        <ToggleContext.Provider value={{ on, toggle }}>
             {children}
-        </>
+        </ToggleContext.Provider>
     )
 }
+
+export { ToggleContext }
