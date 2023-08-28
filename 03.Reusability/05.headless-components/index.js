@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Star from "./Star"
 import Toggle from "./Toggle/index"
+import { BsStar, BsStarFill } from "react-icons/bs"
 
 function App() {
     return (
@@ -21,8 +22,12 @@ function App() {
             <Toggle>
                 <Toggle.Button>
                     <Toggle.On>
-                        <Star /> {/* Aside: Event bubbling could happen here */}
+                        {/* <Star />  Aside: Event bubbling could happen here */}
+                        <BsStarFill className="star filled" />
                     </Toggle.On>
+                    <Toggle.Off>
+                        <BsStar className="star"/>
+                    </Toggle.Off>
                 </Toggle.Button>
             </Toggle>
         </>
