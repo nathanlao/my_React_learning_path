@@ -20,7 +20,9 @@ function App() {
 
             <Toggle>
                 <Toggle.Button>
-                    <Star /> {/* Aside: Event bubbling could happen here */}
+                    <Toggle.On>
+                        <Star /> {/* Aside: Event bubbling could happen here */}
+                    </Toggle.On>
                 </Toggle.Button>
             </Toggle>
         </>
