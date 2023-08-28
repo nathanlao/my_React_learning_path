@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Star from "./Star"
-import Toggle from "./Toggle/index"
+import Toggle from "./components/Toggle/index"
 import { BsStar, BsStarFill } from "react-icons/bs"
 
 function App() {
