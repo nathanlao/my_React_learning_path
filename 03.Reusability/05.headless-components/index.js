@@ -57,7 +57,7 @@ function App() {
 
             {/* 3. Compose the elements with Toggle */}
 
-            <Star />
+            <Star onChange={() => console.log("changed")}/> {/** 4. Using onToggle event listener */}
 
             <Menu>
                 <Menu.Button>Sports</Menu.Button>

@@ -2,7 +2,7 @@ import React from "react"
 import Toggle from "./Toggle/index"
 import { BsStar, BsStarFill } from "react-icons/bs"
 
-export default function Star() {
+export default function Star({ onChange }) {
     // Headless component:
     // This is the internal state of Star, in which we probably won't 
     // need it since Toggle can handle the state and functionality
@@ -20,7 +20,7 @@ export default function Star() {
     // )
 
     return (
-        <Toggle>
+        <Toggle onToggle={onChange}>
             <Toggle.Button>
                 <Toggle.On>
                     {/* <Star />  Aside: Event bubbling could happen here */}
