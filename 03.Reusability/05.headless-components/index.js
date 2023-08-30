@@ -24,17 +24,19 @@ function App() {
                 d. Display (expose internal state to give more control to user)
             */}
 
-            <Toggle>
+            {/* <Toggle>
                 <Toggle.Button>
-                    <Toggle.On>
+                    <Toggle.On> */}
                         {/* <Star />  Aside: Event bubbling could happen here */}
-                        <BsStarFill className="star filled" />
+                        {/* <BsStarFill className="star filled" />
                     </Toggle.On>
                     <Toggle.Off>
                         <BsStar className="star"/>
                     </Toggle.Off>
                 </Toggle.Button>
-            </Toggle>
+            </Toggle> */}
+
+            <Star />
 
             {/* 2. In this example: Menu components are refractored
             to use the logic from Toggle instead of doing any logic 
