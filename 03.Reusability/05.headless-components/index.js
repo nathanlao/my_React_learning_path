@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Star from "./Star"
+import Star from "./components/Star"
 import Toggle from "./components/Toggle/index"
 import Menu from "./components/Menu/index"
 
