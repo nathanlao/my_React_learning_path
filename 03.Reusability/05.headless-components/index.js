@@ -59,7 +59,7 @@ function App() {
 
             <Star onChange={() => console.log("changed")}/> {/** 4. Using onToggle event listener */}
 
-            <Menu>
+            <Menu onOpen={() => console.log("menu toggled")}>
                 <Menu.Button>Sports</Menu.Button>
                 <Menu.Dropdown>
                     {sports.map((sport) => (
