@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Star from "./components/Star"
-import Toggle from "./components/Toggle/index"
 import Menu from "./components/Menu/index"
 
 import { BsStar, BsStarFill } from "react-icons/bs"
@@ -36,12 +35,11 @@ function App() {
                 </Toggle.Button>
             </Toggle> */}
 
-            <Star />
-
             {/* 2. In this example: Menu components are refractored
             to use the logic from Toggle instead of doing any logic 
             of its own. */}
-            <Toggle>
+
+            {/* <Toggle>
                 <Menu>
                     <Toggle.Button>
                         <Menu.Button>Sports</Menu.Button>
@@ -54,7 +52,22 @@ function App() {
                         </Menu.Dropdown>
                     </Toggle.On>
                 </Menu>
-            </Toggle>
+            </Toggle> */}
+
+
+            {/* 3. Compose the elements with Toggle */}
+
+            <Star />
+
+            <Menu>
+                <Menu.Button>Sports</Menu.Button>
+                <Menu.Dropdown>
+                    {sports.map((sport) => (
+                        <Menu.Item key={sport}>{sport}</Menu.Item>
+                    ))}
+                </Menu.Dropdown>
+            </Menu>
+
         </>
     )
 }
