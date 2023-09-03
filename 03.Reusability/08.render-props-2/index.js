@@ -17,13 +17,28 @@ function App() {
     return (
         <>
           <Toggle>
+            {/* 2. Render props: Toggle.Display to render the div
+            based on the internal state of Toggle (on)
+            
+            Toggle.Display will take a function as a child
+
+            Concept: <Toggle.Display> exposed the internal state(on)
+            to the outside world
+            */}
             <Toggle.Button>
-              <Toggle.On>
-                <div className="box filled"></div>
-              </Toggle.On>
-              <Toggle.Off>
-                <div className="box"></div>
-              </Toggle.Off>
+              <Toggle.Display>
+              {(on) => {
+                return (
+                  <div className={`box ${on ? "filled" : ""}`}></div>
+                )
+              }}
+                {/* <Toggle.On>
+                  <div className="box filled"></div>
+                  </Toggle.On>
+                  <Toggle.Off>
+                  <div className="box"></div>
+                </Toggle.Off> */}
+              </Toggle.Display>
             </Toggle.Button>
           </Toggle>
         </>
