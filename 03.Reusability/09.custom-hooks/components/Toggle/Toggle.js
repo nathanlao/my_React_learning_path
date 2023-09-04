@@ -1,14 +1,11 @@
 import React from "react"
 import useEffectOnUpdate from "../../hook/useEffectOnUpdate"
+import useToggle from "../../hook/useToggle"
 
 const ToggleContext = React.createContext()
 
 export default function Toggle({ children, onToggle = () => {}}) {
-    const [on, setOn] = React.useState(false)    
-
-    function toggle() {
-        setOn(prevOn => !prevOn)
-    }
+    const [on, toggle] = useToggle();    
 
     // Use the custom hook to set up the effect again
     useEffectOnUpdate(() => { 
