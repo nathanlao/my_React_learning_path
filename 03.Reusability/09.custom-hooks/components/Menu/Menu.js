@@ -12,7 +12,10 @@ export default function Menu({ children, onOpen }) {
      * 5. Great! We don't really need Toggle component any more! Thanks for
      *    useToggle() custom hook!
      */
-    const [open, toggleOpen] = useToggle();
+    const [open, toggleOpen] = useToggle({
+        initialValue: true, 
+        onToggle: onOpen
+    });
 
     return (
         <MenuContext.Provider value={{open, toggleOpen}}>

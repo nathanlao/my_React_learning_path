@@ -8,7 +8,7 @@ function App() {
     <>
       <Star />
 
-      <Menu>
+      <Menu onOpen={() => {console.log("opened/closed")}}>
         <Menu.Button>Menu</Menu.Button>
         <Menu.Dropdown>
           <Menu.Item>Home</Menu.Item>
